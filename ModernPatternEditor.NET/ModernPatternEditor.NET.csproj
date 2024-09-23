@@ -7,15 +7,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Platforms>AnyCPU;x64</Platforms>
     <AssemblyName>Modern Pattern Editor.NET</AssemblyName>
+	<BaseOutputPath>$(SolutionDir)..\build\$(Configuration)\ModernPatternEditor.NET\bin</BaseOutputPath>
+	<IntermediateOutputPath>$(SolutionDir)..\build\$(Configuration)\ModernPatternEditor.NET\obj</IntermediateOutputPath>
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="BuzzGUI.Common">
-      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Jeskola\Buzz\BuzzGUI.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="BuzzGUI.Interfaces">
-      <HintPath>..\..\..\..\..\..\..\..\Program Files\ReBuzz\BuzzGUI.Interfaces.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\..\ReBuzzGUI\BuzzGUI.Common\BuzzGUI.Common.csproj" />
   </ItemGroup>
 
 </Project>
