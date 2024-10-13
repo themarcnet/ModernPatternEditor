@@ -7,7 +7,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Platforms>AnyCPU;x64</Platforms>
     <AssemblyName>Modern Pattern Editor.NET</AssemblyName>
-	<BaseOutputPath>$(SolutionDir)..\build\$(Configuration)\ModernPatternEditor.NET\bin</BaseOutputPath>
+	<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+	<OutputPath>$(SolutionDir)..\bin\$(Platform)\$(Configuration)\net8.0-windows\Gear\Generators</OutputPath>
 	<IntermediateOutputPath>$(SolutionDir)..\build\$(Configuration)\ModernPatternEditor.NET\obj</IntermediateOutputPath>
   </PropertyGroup>
 
