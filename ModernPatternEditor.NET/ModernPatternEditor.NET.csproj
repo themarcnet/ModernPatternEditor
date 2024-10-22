@@ -8,8 +8,8 @@
     <Platforms>AnyCPU;x64</Platforms>
     <AssemblyName>Modern Pattern Editor.NET</AssemblyName>
 	<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-	<OutputPath>$(SolutionDir)..\bin\$(Platform)\$(Configuration)\net8.0-windows\Gear\Generators</OutputPath>
-	<IntermediateOutputPath>$(SolutionDir)..\build\$(Configuration)\ModernPatternEditor.NET\obj</IntermediateOutputPath>
+	<OutputPath>$(SolutionDir)bin\$(Platform)\$(Configuration)\net8.0-windows\Gear\Generators</OutputPath>
+	<IntermediateOutputPath>$(SolutionDir)build\$(Configuration)\ModernPatternEditor.NET\obj</IntermediateOutputPath>
   </PropertyGroup>
 
   <ItemGroup>

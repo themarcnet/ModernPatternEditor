@@ -1,5 +1,5 @@
 <Project>
     <PropertyGroup>
-        <MSBUildProjectExtensionsPath>$(SolutionDir)..\build\$(Configuration)\ModernPatternEditor.NET\obj</MSBUildProjectExtensionsPath>
+        <MSBUildProjectExtensionsPath>$(SolutionDir)build\$(Configuration)\ModernPatternEditor.NET\obj</MSBUildProjectExtensionsPath>
     </PropertyGroup>
 </Project>
