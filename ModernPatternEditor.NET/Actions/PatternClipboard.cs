@@ -1,6 +1,4 @@
 ﻿using BuzzGUI.Interfaces;
-using System.Collections.Generic;
-using System.Linq;
 using WDE.ModernPatternEditor.MPEStructures;
 using Wintellect.PowerCollections;
 
@@ -9,7 +7,7 @@ namespace WDE.ModernPatternEditor.Actions
     public class PatternClipboard
     {
         // Column <set, index>, Beat related data; <beat, rows>
-        Dictionary<int, OrderedDictionary<int, int>> columnBeatData;
+        Dictionary<int, System.Collections.Generic.OrderedDictionary<int, int>> columnBeatData;
         // Column <set, index>, events
         Dictionary<int, List<PatternEvent>> eventData;
         private int regionLenght;
@@ -33,10 +31,10 @@ namespace WDE.ModernPatternEditor.Actions
         {
             if (c.columnBeatData != null)
             {
-                columnBeatData = new Dictionary<int, OrderedDictionary<int, int>>(); //new List<PatternColumnBeatRef>(c.columnBeatData.Count);
+                columnBeatData = new Dictionary<int, System.Collections.Generic.OrderedDictionary<int, int>>(); //new List<PatternColumnBeatRef>(c.columnBeatData.Count);
                 foreach (var key in c.columnBeatData.Keys)
                 {
-                    OrderedDictionary<int, int> dict = new OrderedDictionary<int, int>();
+                    System.Collections.Generic.OrderedDictionary<int, int> dict = new System.Collections.Generic.OrderedDictionary<int, int>();
                     foreach (var e in c.columnBeatData[key])
                         dict[e.Key] = e.Value;
                     columnBeatData[key] = dict;
@@ -126,7 +124,7 @@ namespace WDE.ModernPatternEditor.Actions
             int columnNumber = pattern.GetParamIndex(columnIterator.ParameterColumn.PatternColumn.Parameter, columnIterator.ParameterColumn.PatternColumn.Track);
 
             eventData = new Dictionary<int, List<PatternEvent>>();
-            columnBeatData = new Dictionary<int, OrderedDictionary<int, int>>();
+            columnBeatData = new Dictionary<int, System.Collections.Generic.OrderedDictionary<int, int>>();
 
             while (true)
             {
@@ -151,7 +149,7 @@ namespace WDE.ModernPatternEditor.Actions
 
                 Digit beatIterator = new Digit(columnIterator.PatternVM, columnIterator.ColumnSet, columnIterator.Column, columnIterator.Beat, columnIterator.RowInBeat, columnIterator.Index);
                 // Save beat data
-                OrderedDictionary<int, int> beatData = new OrderedDictionary<int, int>();
+                System.Collections.Generic.OrderedDictionary<int, int> beatData = new System.Collections.Generic.OrderedDictionary<int, int>();
                 while (true)
                 {
                     beatData[beatIterator.Beat - firstBeat] = columnIterator.PatternVM.GetBeat(beatIterator).Rows.Count;

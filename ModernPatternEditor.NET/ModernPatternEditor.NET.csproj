@@ -1,14 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0-windows</TargetFramework>
+    <TargetFramework>net9.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <ImplicitUsings>enable</ImplicitUsings>
     <Platforms>AnyCPU;x64</Platforms>
     <AssemblyName>Modern Pattern Editor.NET</AssemblyName>
 	<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-	<OutputPath>$(SolutionDir)bin\$(Platform)\$(Configuration)\net8.0-windows\Gear\Generators</OutputPath>
+	<OutputPath>$(SolutionDir)bin\$(Platform)\$(Configuration)\$(TargetFramework)\Gear\Generators</OutputPath>
 	<IntermediateOutputPath>$(SolutionDir)build\$(Configuration)\ModernPatternEditor.NET\obj</IntermediateOutputPath>
   </PropertyGroup>
 
