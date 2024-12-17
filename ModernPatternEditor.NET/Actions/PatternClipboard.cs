@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using WDE.ModernPatternEditor.MPEStructures;
-using Wintellect.PowerCollections;
+
 
 namespace WDE.ModernPatternEditor.Actions
 {
